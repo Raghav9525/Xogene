@@ -4,21 +4,19 @@ import DrugDetails from "./component/DrugDetails";
 import SearchPage from "./component/SearchPage";
 
 
-  function App() {
-    return (
-      <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/" element={<SearchPage />}></Route>
-
-            <Route path="/drugs/:drug_name" element={<DrugDetails />}></Route>
-
-          </Routes>
-        </Router>
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<SearchPage />} />
+          <Route path="/drugs/:drug_name" element={<DrugDetails />} />
+        </Routes>
+      </Router>
 
 
-      </div>
-    );
-  }
+    </div>
+  );
+}
 
 export default App;
